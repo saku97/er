@@ -1,0 +1,33 @@
+1-Entities:
+//Krusty Krab
+
+"Attributes: Location, Phone Number, Opening Hours"
+//Employees
+
+"Attributes: Name, Employee ID, Position, Salary"
+Menu Items
+
+"Attributes: Name, Description, Price, Ingredients"
+//Customers
+
+"Attributes: Name, Contact Information"
+2-Relationships:
+//Employees work at the Krusty Krab :
+
+Relationship type: Works at
+Cardinality: One-to-Many (One Krusty Krab location can have multiple Employees, but each Employee works at one Krusty Krab location)
+
+//Employees serve Customers :
+
+Relationship type: Serve
+Cardinality: Many-to-Many (Each Employee can serve multiple Customers, and each Customer can be served by multiple Employees)
+
+//Menu Items are available at the Krusty Krab :
+
+Relationship type: Available at
+Cardinality: One-to-Many (One Krusty Krab location can offer multiple Menu Items, but each Menu Item is available at one Krusty Krab location)
+
+//Customers place Orders for Menu Items :
+
+Relationship type: Place
+Cardinality: Many-to-Many (Customers can place Orders for multiple Menu Items, and each Menu Item can be ordered by multiple Customers)
